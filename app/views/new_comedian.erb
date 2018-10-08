@@ -1,0 +1,66 @@
+<p><a href="/" id="home-link">Home</a></p>
+
+
+  
+<!-- action="the path defined in the controller"-->
+<div class="container" id="new-comedian-form">
+  <form class="new-comedian" action="/comedians" method="POST">
+  <!-- we want to use the hash 'comedian' so we know what wthe information should be attached to -->
+
+  <div class="container" id="new-comedian-entry-box">
+    <div id="form-header">New Comedian</div>
+    <div class="row">
+
+      <div class="column">
+        <img id="mic-head" src="https://banner2.kisspng.com/20180410/wpe/kisspng-microphone-stand-up-comedy-comedian-comedy-club-mic-5acc3c815d9497.0835907015233342733833.jpg" alt="mic head">
+      </div>
+
+      <div class="column" id="data-fields">
+    
+        <div class="container">
+          <div class="row" id="new-name-field">
+            <input type="text" name="comedian[name]" placeholder="Name">
+          </div>
+
+          <div class="row" id="new-age-field">
+            <input type="text" name="comedian[age]" placeholder="Age">
+          </div>
+
+          <div class="row" id="new-city-field">
+            <input type="text" name="comedian[city]" placeholder="City">
+          </div>
+
+          <div class="row" id="new-city-field">
+            <input type="text" name="comedian[picture_url]" placeholder="Picture URL">
+          </div>
+
+          <span class="row">
+            <div class="col">
+              <select name="cars" size="3">
+                <option value="comedian[disgraced?]">Disgraced</option>
+                <option value="saab">Accused</option>
+                <option value="fiat">Neither</option>
+              </select>
+            </div>
+            <div class="col">
+              <select name="cars" size="3">
+                <option value="volvo">Deceased</option>
+                <option value="saab">Living</option>
+              </select>
+            </div>
+          </span>
+          
+          <input id="new-button" type="submit" value="Create Comedian">
+        </div>
+
+      </div>
+    </div>
+    <!-- row -->
+
+  </form>
+
+
+
+</div>
+
+

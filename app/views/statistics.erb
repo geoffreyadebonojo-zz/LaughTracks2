@@ -1,0 +1,53 @@
+<p><a href="/" id="home-link">Home</a></p>
+
+<div class="container" id="statistics-box">
+	
+  <div class="row">
+		<div class="col text-center" id="statistics-header">
+		  Statistics
+		</div>
+	</div>
+
+	
+		<div class="col text-center">
+			<b>average special runtime</b>
+      <%= @avg_run %>
+		</div>
+		<div class="col text-center">
+		  <b>total tv specials</b>
+      <%= @specials.count %>
+		</div>
+		<div class="col text-center">
+		  <b>average age</b>
+      <%= @avg_age %>
+		</div>
+		<div class="col text-center">
+		  <b>cities</b>
+		</div>
+	  
+
+    
+
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center" id="cities-list">
+          <% @cities_list.each do |city| %>
+            <div class="row text-center"><%= city %></div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--cities list -->
+
+	  </div>
+    <!--info -->
+  </div>
+</div>
+  
+<!--div class="container" id="stats-bar-chart">
+  <div class="row" id="chart">
+    <svg class="bar-chart"></svg>
+  </div>
+</div-->

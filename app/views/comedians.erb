@@ -1,0 +1,115 @@
+
+  <p><a href="/" id="home-link">Home</a></p>
+  
+  
+  <div class="container" id="comedians-container">
+	  <div class="row">
+		<div class="col text-center" id="comedians-page-header">
+      Comedians
+		</div>
+		<br>
+		<br>
+	  </div>
+	</div>
+	
+  
+	
+
+<div class="container" id="comedian-info-tabs">
+  
+  <% @comedians.each do |comedian|%>
+    <div class="container" id="comedian-all-rows">
+      <div class="row" id="comedian-rows">
+
+        <div class="col-md-1">
+          <img class="portait" src="<%= comedian.picture_url %>" alt="">
+        </div>
+
+        <div class="col-md-5">
+          <h1><%= comedian.name %></h1>
+        </div>
+
+        <div class="col-md-1">
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#info<%="#{comedian.id}"%>">Info</button>
+        </div><!--button-->
+
+        <div class="col-md-1 offset-md-1">
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#specials<%="#{comedian.id}"%>">Specials</button>
+        </div><!--button-->
+
+        <!--INFO button-->
+        <div id="info<%="#{comedian.id}" %>" class="collapse">
+          <div class="row">
+            </br>
+            <div class="col">
+            
+              <div class="row text-center">
+                <% @verb = "aged" %>
+                <% if comedian.deceased? == "true"%>
+                <%  @verb = "died" %>
+                <% end %>
+                <span id="comedian-age"><%= @verb %>: <%= comedian.age %></span>
+              </div>
+
+              <div class="row text-center">
+                <% @verb = "resides" %>
+                <% if comedian.deceased? == "true"%>
+                <%  @verb = "resided" %>
+                <% end %>
+                <span id="comedian-city"><%= @verb %>: <%= comedian.city %></span>
+              </div>
+
+              <div class="row text-center">
+                <span id="comedian-deceased">
+                <% if comedian.deceased? == "true" %>
+                  <%= "deceased" %>
+                <% end %>
+                </span>
+              </div>
+
+              <div class="row text-center">
+                <span id="comedian-disgraced">
+                <% if comedian.disgraced? == "true" %>
+                  <%= "disgraced"%>
+                <% end %>
+              </div>
+
+            </div><!--row-->
+          </div><!--col-->
+        </div><!--INFO button-->
+
+      
+        <!--SPECIALS button-->
+        <div id="specials<%="#{comedian.id}" %>" class="collapse">
+          <div class="row"><!--specials-->
+            <br>
+            <% comedian.specials.each do |special|%>
+              <div class="col text-center" id="comedian-specials">
+                  <a href="<%= special.watch_now_url %>" >
+                    <img class="special-cover" src="<%= special.image_url %>" alt="<%= special.name %>-img">
+                  </a>
+              </div>
+            <% end %>
+
+          </div><!--row-->
+        </div><!--SPECIALS button-->
+
+      <% end %>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <img class="portait" src="https://banner2.kisspng.com/20180410/wpe/kisspng-microphone-stand-up-comedy-comedian-comedy-club-mic-5acc3c815d9497.0835907015233342733833.jpg" alt="">
+        </div>
+        
+        <div class="col-md-5" >
+          <p id="add-link"><a href="/comedians/new">Add Comedian</a></p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

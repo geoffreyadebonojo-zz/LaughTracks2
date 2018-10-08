@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import 'neon.css';
+@import 'scroll.css';
+
+body {
+color: #2B4162;
+background: grey;
+}
+
+h1 {
+display: flex;
+justify-content: left;
+color: grey;
+}
+
+h2 {
+font-size: 16px;
+}
+
+h3 {
+display: flex;
+justify-content: space-around;
+text-decoration: underline;
+}
+
+a {
+display: flex;
+justify-content: space-around;
+}
+
+p {display: flex;
+  justify-content: space-around;
+  font-family: "Times New Roman", Times serif;
+}
+
+
+/*  WELCOME PAGE */
+#over-header{
+font-size: 100px;
+font-family: 'Montserrat', sans-serif;
+}
+#head-line{
+font-family: 'Montserrat', sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+body {
+  background-color: #222;
+}
+.plate {
+  width: 410px;
+  margin: 5% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  transform: scaleX(1.2);
+  -webkit-transform: scaleY(0.7);
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleY(0.7);
+  -moz-transform: scaleX(1.2);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 60px;
+}
+.text2 {
+  font-size: 10em;
+}
+.text3 {
+  font-size: 5em;
+}
+
+#starring{
+font-size: 30px;
+}
+
+#starring-field{padding-bottom: 35px;padding-left: 29%;width: 512px;}
+
+/* STATS PAGE */
+
+#statistics-header {
+  padding: 20px;
+  font-size: 35px;
+  font-family: 'Pacifico';
+}
+  
+#statistics-box {
+  background-color: lightgrey;
+  border-radius: 12px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  /* visibility: hidden; */
+}
+
+#cities-list{
+  padding-left: 100px;
+}
+
+
+#stats-bar-chart{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  -radius: 20%;
+}
+
+
+#chart{
+  background: lightgrey;
+  border-radius: 20px
+  }
+
+
+
+/* COMEDIANS */
+
+#home-link{
+  justify-content: left;
+  padding: 20px;
+  font-size: 30px;
+  color:lightgrey;
+}
+
+#add-link{
+  justify-content: left;
+  font-size: 30px;
+  color:lightgrey;
+  font-family: 'Pacifico'
+}
+
+#home-link:hover{
+  color: blue;
+}
+
+#comedian-container{
+  padding-top: 5px;
+}
+
+#comedians-page-header {
+  padding: 20px;
+  font-size: 111px;
+  color: gold;
+  font-family: 'Pacifico';
+}
+
+#comedian {
+  font-size: 50px;
+}
+
+
+
+.portait{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
+
+.special-cover{
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+#comedian-row{
+  padding: 50px;
+}
+
+#comedian-name{
+color: blue;
+}
+
+#comedian-age{
+  justify-content: center;
+  color: gold;
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#comedian-city{
+  color: whitesmoke;
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#comedian-deceased{
+  color: lightblue;
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#comedian-disgraced{
+  color: red;
+  font-size: 20px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/* NEW COMEDIAN */
+
+#form-header{
+  display: flex;
+  justify-content: center; 
+  font-size: 70px;
+  font-family: 'Pacifico'
+}
+
+#new-comedian-form{
+  background-color: teal;
+  width: 50%;
+  justify-content: center;
+}
+
+#new-button{
+  vertical-align: middle;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+#new-comedian-form{
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  border-radius: 20px;
+}
+
+#new-comedian-entry-box{
+  padding-bottom: 50px;
+}
+
+
+
+#mic-head{
+  width: 300px;
+  height: 290px;
+  margin-left: 100px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+#data-fields{
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+}
+
+#new-name-field, #new-age-field,#new-city-field {
+padding: 5px;
+}
+
+#comedian-specials{
+display: flex;
+height: 200;
+width:200px
+}
+
+#comedian-info-tabs{
+padding-top: 15px;
+}
+
+.btn{
+  width: 100px;
+  text-align: center;
+}
+
+/* navbar */
+.navbar-brand{
+color: beige;
+}
+
+
+
+#see-comedians-link{
+  font-size: 30px;
+}
+
+
+#add-comedians-link{
+  font-size: 30px;
+}
+
+
+/*  NEW SPECIAL */
+
+#mic-rophone{
+  width: 350px;
+  height: 350px;
+  margin-left: 90px;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+#new-special-choose-comedian{
+  font-family: 'Pacifico';
+  font-size: 30px;
+  border: navy;
+  margin: 50px 20px 20px 40px;
+}
+
+#new-special-form{
+  padding-top: 50px;
+  background: teal;
+  border-radius: 50px;
+  padding-bottom: 30px;
+}
+
+#new-special-entry-fields{
+  padding-top:  100px;
+}

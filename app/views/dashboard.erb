@@ -1,0 +1,59 @@
+<!--div class="text" id= "starring-field">
+  <span><span id="starring"> Starring:</span>
+
+  <% @comedians.each do |comedian| %>
+    <span class="word wisteria"><%= "  #{comedian.name}" %></span>
+    <% end%>
+  </span>
+</div-->
+
+
+<div class="plate">
+  <p class="shadow text2">LAUGH</p>
+  <p class="shadow text3">TRACKS</p>
+</div>
+  
+
+  <p id="link-1" class="script">
+    <span>
+      <a class="navbar-brand" href="/comedians" id="see-comedians-link">
+        See Comedians
+      </a>
+    </span>
+  </p>
+  
+  <p id="link-2" class="script">
+    <span>
+      <a class="navbar-brand" href="/comedians/new" id="add-comedians-link">
+        Add Comedian
+      </a>
+    </span>
+  </p>
+
+  <p id="link-3" class="script">
+    <span>
+      <a class="navbar-brand" href="/specials/new" id="add-special-link">
+        Add Special
+      </a>
+    </span>
+  </p>
+
+  <p id="link-4" class="script">
+    <span>
+      <a class="navbar-brand" href="/comedians/statistics" id="shuffle-play-link">
+        Statistics
+      </a>
+    </span>
+  </p>
+
+  <p id="link-5" class="script">
+    <span>
+      <a class="navbar-brand" href="<%= @random_special.watch_now_url%>" id="add-comedians-link">
+        Shuffle Play
+      </a>
+    </span>
+  </p>
+
+
+
+  
